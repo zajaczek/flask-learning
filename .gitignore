@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
 env
+*.db
 
 
 ### JetBrains template
@@ -244,3 +245,4 @@ pyvenv.cfg
 .venv
 pip-selfcheck.json
 
+/.idea/
