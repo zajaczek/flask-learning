@@ -2,6 +2,7 @@ import os
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
+
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'I-like-cookies'
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or fr'sqlite:///{os.path.join(basedir, "app.db")}'
@@ -25,3 +26,5 @@ class Config(object):
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = ['krzysztof.krolikowski92@gmail.com']
+    #
+    POSTS_PER_PAGE = 25
